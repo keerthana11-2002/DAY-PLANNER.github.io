@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>DAY PLANNER</title>
+</head>
+<body>
+    <div class="navbar">
+       <h1 class="title">
+        <span class="span">Day</span> Planner <img src="images/cal.jpg" alt="img" width="50px" height="50px"></h1>
+    </div>
+    <div class="container">
+    <div class="event-container">
+            <h1>Schedule</h1>
+            <h3>Event :</h3>
+            <h3>Date : dd /mm /y </h3>
+            <h3>Venue :</h3>
+            <h3>Timing : am /pm</h3>
+            <h3>Organizer :</h3>
+            <h3>Description :</h3>
+            <button class="btn">Delete</button>
+        </div>
+</div>
+
+<div class="poppup-overlay"></div>
+<div class="poppup-box">
+    <h2>Add Events</h2>
+    <form>
+        <input type="text" placeholder="Title" id="title-input">
+        <input type="text" placeholder="Date" id="date-input">
+        <input type="text" placeholder="Venue" id="venue-input">
+        <input type="text" placeholder="Timing" id="timing-input">
+        <input type="text" placeholder="Organizer" id="organizer-input">
+        <textarea placeholder="short-description" id="description-input"></textarea>
+        <button id="add-btn">Add</button>
+        <button id="cancel-btn">Cancel</button>
+    </form>
+</div>
+<button class="add-btn" id="add-popup">+</button>
+<script src="main.js"></script>
+</body>
+</html>
